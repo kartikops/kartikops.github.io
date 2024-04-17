@@ -54,7 +54,7 @@ h4 {
     box-sizing: border-box;
     position: fixed; /* Ensures sidebar stays in place */
     left: 0; /* Aligns sidebar to the left edge */
-    top: 0; /* Aligns sidebar to the top */
+    top: 10; /* Aligns sidebar to the top */
 }
 
 .sidebar ul {
