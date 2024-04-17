@@ -1,0 +1,78 @@
+/* General body and layout settings */
+body {
+    font-family: 'Consolas', 'Monaco', 'Lucida Console', Lato, sans-serif;
+    background-color: #1e1e1e;
+    color: #d4d4d4;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+/* Sidebar styles */
+.sidebar {
+    width: 200px;
+    background-color: #252526;
+    height: 100vh;
+    overflow-y: auto;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li a {
+    color: #ccc;
+    text-decoration: none;
+    display: block;
+    padding: 8px;
+    transition: background-color 0.3s;
+}
+
+.sidebar ul li a:hover {
+    background-color: #007acc;
+}
+
+/* Main content area */
+.main {
+    flex-grow: 1;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* Editor and code display styles */
+.editor {
+    background-color: #1e1e1e;
+    border: 1px solid #3c3c3c;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.editor-toolbar {
+    background-color: #333;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+/* Ensure margins and centering */
+.vscode {
+    display: flex;
+    height: 100vh;
+}
+
+@media (max-width: 768px) {
+    .sidebar {
+        width: 100%;
+        height: auto;
+    }
+
+    .main {
+        padding: 10px;
+    }
+
+    .vscode {
+        flex-direction: column;
+    }
+}
