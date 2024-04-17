@@ -10,15 +10,22 @@ body {
 
 /* Header and Title styles */
 header {
+    position: fixed; /* This makes the header fixed at the top */
+    top: 0; /* Aligns the header to the top */
+    left: 0; /* Aligns the header to the left */
+    width: 100%; /* Ensures the header spans the full width of the page */
     background-color: #1e1e1e; /* Same as your body background for consistency */
     color: #d4d4d4; /* Light color for the text to stand out */
     text-align: center;
+    padding: 20px 0;
+    z-index: 1000; /* Ensures the header is above other content */
 }
 
 h4 {
     margin: 0;
     padding: 0;
 }
+
 
 
 /* Title styles */
@@ -92,6 +99,7 @@ h4 {
 
 /* Ensure margins and centering */
 .vscode {
+    padding-top: 80px; /* This value should be at least the height of your header */
     display: flex;
     height: 100vh;
 }
@@ -100,6 +108,7 @@ h4 {
     .sidebar {
         width: 100%;
         height: auto;
+        margin-top: 80px; /* This should match the header's height to prevent overlap */
     }
 
     .main {
