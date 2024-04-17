@@ -8,6 +8,20 @@ body {
     overflow-x: hidden;
 }
 
+/* Title styles */
+.title {
+    color: #d4d4d4; /* Light color for visibility */
+    background-color: #1e1e1e; /* Background color matching the theme */
+    text-align: center;
+    padding: 10px 0; /* Some padding around the title */
+    font-size: 1.5em; /* Making the title a bit larger */
+}
+
+/* Ensure the main content is pushed down so the title is not hidden by the fixed sidebar */
+.main-content {
+    padding-top: 50px; /* Adjust this value based on the actual height of your title bar */
+}
+
 
 /* Sidebar styles */
 .sidebar {
