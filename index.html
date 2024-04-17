@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Kartik's Resume as Code</title>
+    <!-- Include the Prism CSS from CDN -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.23.0/themes/prism-okaidia.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="vscode" style="padding-left: 15%; padding-right: 15%;">
+        <div class="sidebar">
+            <ul>
+                <li><a href="#" onclick="loadFile('index.html')">index.html</a></li>
+                <li><a href="#" onclick="loadFile('script.js')">script.js</a></li>
+                <li><a href="#" onclick="loadFile('styles.css')">styles.css</a></li>
+                <li><a href="#" onclick="loadFile('whoami.tf')">whoami.tf</a></li>
+            </ul>
+        </div>
+        <div class="main">
+            <div class="editor-toolbar">
+                <!-- Editor toolbar content like tabs and buttons goes here -->
+            </div>
+            <pre id="editor" class="editor"><code id="terraform-code" class="language-terraform">
+                <!-- Terraform code will be loaded here dynamically -->
+            </code></pre>
+        </div>
+    </div>
+    <!-- Include the Prism JS from CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.23.0/prism.min.js"></script>
+    <!-- If you have additional Prism plugins or languages, include them here -->
+    <script src="script.js"></script>
+</body>
+</html>
