@@ -99,7 +99,7 @@ h4 {
 
 /* Ensure margins and centering */
 .vscode {
-    padding-top: 80px; /* This value should be at least the height of your header */
+    padding-top: 30px; /* This value should be at least the height of your header */
     display: flex;
     height: 100vh;
 }
