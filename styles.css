@@ -19,6 +19,7 @@ header {
     text-align: center;
     padding: 20px 0;
     z-index: 1000; /* Ensures the header is above other content */
+    position: relative; /* Changed from fixed to relative for inner positioning */
 }
 
 h4 {
@@ -26,7 +27,24 @@ h4 {
     padding: 0;
 }
 
+/* Styles for the copy button */
+#copy-button {
+    position: absolute; /* Position the button absolutely within the header */
+    right: 20px; /* 20px from the right edge of the header */
+    top: 50%; /* Align vertically */
+    transform: translateY(-50%); /* Center vertically */
+    padding: 10px 15px; /* Padding for the button */
+    background-color: #007acc; /* Button background color */
+    color: white; /* Button text color */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Cursor to indicate it's clickable */
+    outline: none; /* Remove outline to keep the design clean */
+}
 
+#copy-button:hover {
+    background-color: #005a9c; /* Slightly darker on hover for feedback */
+}
 
 /* Title styles */
 .title {
