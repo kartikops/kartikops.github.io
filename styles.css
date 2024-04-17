@@ -13,14 +13,14 @@ header {
     display: flex; /* Use flexbox for positioning */
     justify-content: space-between; /* Space out title and button */
     align-items: center; /* Align items vertically */
-    background-color: #1e1e1e; /* Background color */
-    color: #d4d4d4; /* Text color */
+    background-color: #efefef; /* Background color */
+    color: #252526; /* Text color */
     text-align: left; /* Align the text to the left */
-    padding: 10px 20px; /* Padding on all sides */
+    padding: 10px 35px; /* Padding on all sides */
     position: fixed; /* Fix position at the top */
     top: 0; /* Align to top */
     width: 100%; /* Full width */
-    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2); /* Shadow for depth */
+    box-shadow: 2 3px 4px 0 rgba(0, 0, 0, 0.2); /* Shadow for depth */
     z-index: 1000; /* High z-index to stay on top */
 }
 
@@ -32,7 +32,7 @@ h4 {
 /* Styles for the copy button */
 #copy-button {
     position: absolute; /* Position the button absolutely within the header */
-    right: 20px; /* 20px from the right edge of the header */
+    right: 120px; /* 20px from the right edge of the header */
     top: 50%; /* Align vertically */
     transform: translateY(-50%); /* Center vertically */
     padding: 10px 15px; /* Padding for the button */
