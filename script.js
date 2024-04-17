@@ -1,5 +1,11 @@
+document.addEventListener('DOMContentLoaded', () => {
+    // Load 'whoami.tf' by default on page load
+    loadFile('whoami.tf');
+});
+
 // Function to fetch and display file content
 function loadFile(fileName) {
+    event.preventDefault();  // Prevent the default anchor behavior
     fetch(fileName)
         .then(response => response.text())
         .then(data => {
@@ -13,9 +19,11 @@ function loadFile(fileName) {
 function copyToClipboard() {
     const code = document.getElementById('terraform-code').textContent;
     navigator.clipboard.writeText(code)
-        .then(() => alert('Code copied to clipboard!'))
+        .then(() => alert('Code copied to clipboard!'))  // Optional alert
         .catch(err => console.error('Error copying text: ', err));
 }
 
 // Event listener for the copy button (assumed to be part of your HTML)
-document.getElementById('copy-button').addEventListener('click', copyToClipboard);
+if (document.getElementById('copy-button')) {
+    document.getElementById('copy-button').addEventListener('click', copyToClipboard);
+}
