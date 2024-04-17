@@ -22,6 +22,13 @@ function copyToClipboard() {
         .then(() => alert('Code copied to clipboard!'))  // Optional alert
         .catch(err => console.error('Error copying text: ', err));
 }
+// Bind the copy function to the "Copy Code" button
+document.addEventListener('DOMContentLoaded', () => {
+    const copyButton = document.getElementById('copy-button');
+    if (copyButton) {
+        copyButton.addEventListener('click', copyToClipboard);
+    }
+});
 
 // Event listener for the copy button (assumed to be part of your HTML)
 if (document.getElementById('copy-button')) {
