@@ -14,8 +14,8 @@ header {
     top: 0; /* Aligns the header to the top */
     left: 0; /* Aligns the header to the left */
     width: 100%; /* Ensures the header spans the full width of the page */
-    background-color: #1e1e1e; /* Same as your body background for consistency */
-    color: #d4d4d4; /* Light color for the text to stand out */
+    background-color: #F6F8FA; /* Same as your body background for consistency */
+    color: #1e1e1e; /* Light color for the text to stand out */
     text-align: center;
     padding: 20px 0;
     z-index: 1000; /* Ensures the header is above other content */
@@ -54,7 +54,7 @@ h4 {
     box-sizing: border-box;
     position: fixed; /* Ensures sidebar stays in place */
     left: 0; /* Aligns sidebar to the left edge */
-    top: 10; /* Aligns sidebar to the top */
+    top: 12; /* Aligns sidebar to the top */
 }
 
 .sidebar ul {
