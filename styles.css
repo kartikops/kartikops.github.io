@@ -8,6 +8,20 @@ body {
     overflow-x: hidden;
 }
 
+/* Header and Title styles */
+header {
+    background-color: #1e1e1e; /* Same as your body background for consistency */
+    color: #d4d4d4; /* Light color for the text to stand out */
+    text-align: center;
+    padding: 20px 0;
+}
+
+h2 {
+    margin: 0;
+    padding: 0;
+}
+
+
 /* Title styles */
 .title {
     color: #d4d4d4; /* Light color for visibility */
