@@ -50,11 +50,11 @@ h4 {
     color: #d4d4d4; /* Light color text for visibility */
     height: 100vh;
     overflow-y: auto;
-    padding: 20px;
+    padding: 30px;
     box-sizing: border-box;
     position: fixed; /* Ensures sidebar stays in place */
     left: 0; /* Aligns sidebar to the left edge */
-    top: 20; /* Aligns sidebar to the top */
+    top: 30; /* Aligns sidebar to the top */
 }
 
 .sidebar ul {
