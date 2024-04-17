@@ -79,7 +79,7 @@ h4 {
 /* Main content area */
 .main {
     flex-grow: 1;
-    padding: 20px;
+    padding: 10px;
     box-sizing: border-box;
 }
 
